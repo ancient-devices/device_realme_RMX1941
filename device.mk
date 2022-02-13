@@ -199,7 +199,7 @@ PRODUCT_PACKAGES += \
 	
 # Remove Packages
 PRODUCT_PACKAGES += \
-    remove_packages
+    RemovePackages
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
