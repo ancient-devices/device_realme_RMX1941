@@ -171,6 +171,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # GPS
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/gps_debug.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps_debug.conf
+	
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0 \
     android.hardware.gnss@2.0.vendor
