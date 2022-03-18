@@ -1047,12 +1047,13 @@ on property:ro.vendor.gsi.build.flavor=*
 #endif /*ODM_CM_EDIT*/
 
 # Charger
-service charger /system/bin/chargeonlymode
+service vendor.charger /system/bin/chargeonlymode
     class charger
-    critical
+    user system
     #seclabel u:r:charger:s0
-    group system graphics
-    seclabel u:r:healthd:s0
+    group system graphics input
+    capabilities SYS_BOOT
+    seclabel u:r:charger:s0
 
 # Performance profiles
 on property:perf_profile=1
