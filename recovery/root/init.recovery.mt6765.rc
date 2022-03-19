@@ -5,3 +5,8 @@ service init-recovery-mt6765-sh /init.recovery.mt6765.sh
     user root
     group root
     seclabel u:r:recovery:s0
+	
+on boot
+    # Turn backlight on and switch to backlight trigger
+    write /sys/class/leds/lcd-backlight/brightness "1000"
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
