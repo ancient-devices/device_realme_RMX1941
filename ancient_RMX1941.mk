@@ -46,7 +46,7 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 ANCIENT_OFFICIAL ?= true
 ANCIENT_GAPPS ?= true
-USE_PIXEL_CHARGING := true
+TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := RMX1941
