@@ -45,7 +45,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 ANCIENT_OFFICIAL ?= true
-ANCIENT_GAPPS ?= true
+#ANCIENT_GAPPS ?= true
 TARGET_INCLUDE_PIXEL_CHARGER  := true
 
 # Device identifier. This must come after all inclusions
